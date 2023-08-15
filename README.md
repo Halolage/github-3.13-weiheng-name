@@ -12,7 +12,9 @@ The purpose of this project is to automate the process of building, testing, and
 
 3. **Unit Testing**: Run unit tests on the Serverless Application using testing frameworks like Jest and Mocha.
 
-4. **Deployment**: Deploy the Serverless Application to AWS Lambda using the Serverless Framework.
+4. **Retrieve Parameter**: Retrieve a parameter from AWS Systems Manager Parameter Store and display its value.
+
+5. **Deployment**: Deploy the Serverless Application to AWS Lambda using the Serverless Framework.
 
 ## Workflow Steps
 
@@ -23,6 +25,8 @@ The workflow is defined in the `.github/workflows/main.yml` file. Here's a brief
 - **Install Dependencies**: Checkout the repository code and install project dependencies using `npm install`.
 
 - **Unit Testing**: Checkout the code again, install dependencies, and run unit tests using testing frameworks.
+
+- **Retrieve Parameter**: Use the AWS CLI to retrieve a parameter from AWS Systems Manager Parameter Store and display its value.
 
 - **Deployment**: Checkout the code, set up Node.js environment, install dependencies, and deploy the Serverless Application to AWS Lambda using the Serverless Framework.
 
